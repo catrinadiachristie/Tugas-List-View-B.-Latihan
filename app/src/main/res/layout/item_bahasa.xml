@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp">
+    
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/gambar_bahasa"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@android:color/holo_green_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_toEndOf="@+id/gambar_bahasa"
+        android:layout_toRightOf="@+id/gambar_bahasa">
+
+        <TextView
+            android:id="@+id/textview_itemnama_bahasa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="@string/nama_bahasa" />
+
+        <TextView
+            android:id="@+id/textview_iteminfo_bahasa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            tools:text="@string/info_bahasa" />
+
+    </LinearLayout>
+</RelativeLayout>
